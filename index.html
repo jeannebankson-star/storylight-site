@@ -1,102 +1,416 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Storylight Quest</title>
-  <meta name="description" content="Storylight Quest is a family Bible trivia adventure for iPhone: 100 stories, questions for every age and a card to win for every story.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="./">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#e9b94e" d="M12 1.5l2.3 6.4 6.7.3-5.3 4.2 1.9 6.5L12 15l-5.6 3.9 1.9-6.5L3 8.2l6.7-.3z"/></svg>
-        Storylight Quest
-      </a>
-      <nav class="site" aria-label="Site">
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="hero">
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path fill="#e9b94e" d="M12 1.5l2.3 6.4 6.7.3-5.3 4.2 1.9 6.5L12 15l-5.6 3.9 1.9-6.5L3 8.2l6.7-.3z"/></svg>
-      <p class="eyebrow">For iPhone</p>
-      <h1>Journey through the Bible together</h1>
-      <p class="lede">A family trivia quest through 100 Bible stories. Every player answers questions made for their age, and every story you finish wins a card for your collection.</p>
-      <div class="links">
-        <a class="primary" href="#journeys">See the journeys</a>
-        <a href="support.html">Get help</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Storylight Quest · Bible stories for the whole family</title>
+    <meta
+      name="description"
+      content="A little wonder. A story to share. Explore Bible journeys, collect ornate cards and play nearby family trivia on iPhone and iPad. Start with 10 free stories."
+    />
+    <meta name="theme-color" content="#F6FAFB" />
+    <meta property="og:title" content="Storylight Quest · A story to share" />
+    <meta
+      property="og:description"
+      content="Bible stories, collectible cards and family time. Discover 10 free stories across the Old and New Testaments on iPhone and iPad."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://storylightquest.com/" />
+    <meta
+      property="og:image"
+      content="https://storylightquest.com/assets/images/app-icon.png"
+    />
+    <link rel="canonical" href="https://storylightquest.com/" />
+    <link rel="icon" href="assets/images/app-icon.png" type="image/png" />
+    <link
+      rel="preload"
+      href="assets/fonts/Montserrat-ExtraBold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href="./" aria-label="Storylight Quest home"
+          ><svg viewBox="0 0 40 40" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="m20 3 4.7 10.5L36 15l-8.3 8 2.1 11.4L20 29l-9.8 5.4L12.3 23 4 15l11.3-1.5z"
+            />
+            <circle cx="17" cy="19" r="1.2" fill="#FFFEFA" />
+            <circle cx="23" cy="19" r="1.2" fill="#FFFEFA" />
+            <path
+              d="M17 23q3 3 6 0"
+              fill="none"
+              stroke="#FFFEFA"
+              stroke-width="1.4"
+              stroke-linecap="round"
+            /></svg
+          ><span>Storylight <span class="brand-quest">Quest</span></span></a
+        >
+        <nav class="site" aria-label="Site">
+          <a href="#journeys">Journeys</a><a href="#cards">Cards</a
+          ><a href="#together">Together</a
+          ><a class="nav-help" href="support.html"
+            >Get help <span aria-hidden="true">↗</span></a
+          >
+        </nav>
       </div>
-    </section>
-
-    <section aria-labelledby="ages">
-      <h2 id="ages">Questions for every age</h2>
-      <p>Each player picks their own level, so a four-year-old and a grandparent can play the same story with questions made for them. There are nine questions for every story at every level, 3,600 in all.</p>
-      <ul class="levels">
-        <li><strong>Little Lights</strong><span class="ages">Ages 4–6</span>Gentle questions with three big, friendly answers.</li>
-        <li><strong>Explorers</strong><span class="ages">Ages 7–9</span>Story questions for confident readers.</li>
-        <li><strong>Torchbearers</strong><span class="ages">Ages 10–12</span>Deeper details for sharp-eyed story fans.</li>
-        <li><strong>Lantern Keepers</strong><span class="ages">Teens &amp; grown-ups</span>Hard questions that send grown-ups back to the passage.</li>
-      </ul>
-    </section>
-
-    <div class="card">
-      <h2>Play trivia together</h2>
-      <p>Family Night turns one iPhone into a game for the whole room. Two to six players take turns passing the phone, and each one answers at their own level. A scoreboard keeps count between turns, and the night ends on a winners' podium.</p>
-    </div>
-
-    <div class="card">
-      <h2>Win a card for every story</h2>
-      <p>Answer all three questions about a story correctly to win its card. Each of the 100 cards has its own artwork and a rarity of Rare, Epic or Legendary, and every player fills their own album. A new card also earns a helper for tough questions, like the Star of Wisdom, which sweeps away two wrong answers.</p>
-    </div>
-
-    <section aria-labelledby="journeys">
-      <h2 id="journeys">Ten journeys from Creation to the Eternal Kingdom</h2>
-      <p>Travel the Bible in order, ten stories at a time.</p>
-      <ol class="journeys">
-        <li><strong>In the Beginning</strong>Creation to the family of promise</li>
-        <li><strong>The Dreamer's Road</strong>Jacob, Joseph and God's plan</li>
-        <li><strong>The Great Escape</strong>Moses and the road to freedom</li>
-        <li><strong>Heroes and Helpers</strong>Judges, friends and listeners</li>
-        <li><strong>Crowns and Courage</strong>Kings, prophets and brave queens</li>
-        <li><strong>A Savior Is Born</strong>The story of Christmas and beyond</li>
-        <li><strong>Miracles and Parables</strong>Jesus teaches and heals</li>
-        <li><strong>The Greatest Victory</strong>The cross, the empty tomb and joy</li>
-        <li><strong>The Church Is Born</strong>The Spirit sends the good news out</li>
-        <li><strong>Letters of Light</strong>Letters of love and forever hope</li>
-      </ol>
-    </section>
-
-    <div class="card">
-      <h2>Read and listen</h2>
-      <p>Every story can be read aloud, retold at three reading levels or read in full from the Berean Standard Bible or the King James Version.</p>
-    </div>
-
-    <div class="card">
-      <h2>More journeys on the way</h2>
-      <p>We're planning new journeys for holidays like Christmas and Easter, journeys through single books of the Bible and collections about the people of the Bible, from the kings of Israel to its women of faith.</p>
-      <p class="note">Future journeys may be sold separately from the Full Quest.</p>
-    </div>
-
-    <div class="card">
-      <h2>Made for families</h2>
-      <p>The first three journeys, 30 stories, are free with no time limit. The Full Quest is a single one-time purchase, not a subscription, that unlocks the other 70 stories for every player on your device. You can restore it on your other devices with the same Apple ID. It is not shared with other members of a Family Sharing group.</p>
-      <p>There are no ads or accounts. Nothing is collected about you or your children. Everything commercial sits behind a grown-ups check.</p>
-    </div>
-  </main>
-
-  <footer class="site">
-    <div class="wrap">
-      © 2026 AKS Services LLC · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
-      <p class="legal">iPhone is a trademark of Apple Inc., registered in the U.S. and other countries and regions.</p>
-    </div>
-  </footer>
-</body>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="little-star" aria-hidden="true">✦</span> Faith, wonder
+            &amp; family time
+          </p>
+          <h1 id="hero-title">
+            A little wonder.<br />A story
+            <span class="underline">to share.</span>
+          </h1>
+          <p class="lede">
+            Bring Bible story time to life. Choose an adventure, collect a
+            beautiful card and discover something new together.
+          </p>
+          <p class="hero-for">
+            Made for Christian families. From little lights to grown-ups.
+          </p>
+          <div class="links">
+            <a class="button primary" href="#journeys"
+              >Explore the journeys <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="#together"
+              >Make it family time <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <p class="hero-note">
+            <span class="check" aria-hidden="true">✓</span> 10 free stories
+            <span aria-hidden="true">·</span> iPhone &amp; iPad
+            <span aria-hidden="true">·</span> No ads
+          </p>
+        </div>
+        <div class="hero-scene">
+          <div class="scene-orbit" aria-hidden="true"></div>
+          <svg class="sun-doodle" viewBox="0 0 100 100" aria-hidden="true">
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round"
+            >
+              <circle cx="50" cy="50" r="23" />
+              <path
+                d="M50 7v10m0 66v10M7 50h10m66 0h10M20 20l8 8m44 44 8 8M20 80l8-8m44-44 8-8"
+              />
+              <path d="M42 55q8 9 16 0" />
+            </g>
+            <circle cx="42" cy="45" r="2.5" fill="currentColor" />
+            <circle cx="58" cy="45" r="2.5" fill="currentColor" />
+          </svg>
+          <span class="scene-star star-one" aria-hidden="true">✧</span
+          ><span class="scene-star star-two" aria-hidden="true">✦</span>
+          <div class="hero-phone phone-frame">
+            <img
+              src="assets/images/journeys-phone.jpg"
+              width="660"
+              height="1434"
+              alt="Storylight Journeys screen with a mint story trail and a choice of Old Testament journeys"
+              fetchpriority="high"
+            />
+          </div>
+          <img
+            class="hero-card-back"
+            src="assets/images/card-back.jpg"
+            width="600"
+            height="840"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hero-card"
+            src="assets/images/creation-card.jpg"
+            width="600"
+            height="840"
+            alt="Ornate God Creates the World collectible card with illustrated artwork and story powers"
+          />
+          <p class="scene-note">
+            <span aria-hidden="true">✦</span> A story. A discovery.<br />A
+            little treasure.
+          </p>
+        </div>
+      </section>
+      <div class="promise-strip">
+        <div class="wrap promises">
+          <p>
+            <span aria-hidden="true">✦</span> <strong>100</strong> Bible stories
+          </p>
+          <p>
+            <span aria-hidden="true">⌁</span> <strong>10</strong> journeys to
+            explore
+          </p>
+          <p><span aria-hidden="true">♡</span> A place for every age</p>
+          <p><span aria-hidden="true">☀</span> Read, listen &amp; play</p>
+        </div>
+      </div>
+      <section
+        class="section wrap journeys-section"
+        id="journeys"
+        aria-labelledby="journey-title"
+      >
+        <div class="journey-preview">
+          <div class="preview-label">
+            <span aria-hidden="true">01 /</span> Pick a path. Follow the story.
+          </div>
+          <div class="trail-decor" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="quest-phone phone-frame">
+            <img
+              src="assets/images/story-quest-phone.jpg"
+              width="660"
+              height="1434"
+              alt="In the Beginning journey in the app, with individual stories laid out along an interactive quest trail"
+              loading="lazy"
+            />
+          </div>
+          <span class="preview-sticker"
+            >One story<br />at a time <span aria-hidden="true">✧</span></span
+          >
+        </div>
+        <div class="section-copy">
+          <p class="eyebrow">Your family. Your adventure.</p>
+          <h2 id="journey-title">Where will your<br />story begin?</h2>
+          <p>
+            Choose any unlocked journey, then follow its story trail one step at
+            a time. Read or listen together and answer three questions to
+            collect each story’s card.
+          </p>
+          <p class="sampler-intro">
+            Start with <strong>10 free stories</strong> across two journeys. You
+            can begin with either one.
+          </p>
+          <div class="sampler mint">
+            <span class="sampler-symbol" aria-hidden="true">☀</span>
+            <div>
+              <span class="small-label">Old Testament · 5 free stories</span>
+              <h3>In the Beginning</h3>
+              <p>Discover the opening stories of the Bible.</p>
+            </div>
+          </div>
+          <div class="sampler peach">
+            <span class="sampler-symbol" aria-hidden="true">≈</span>
+            <div>
+              <span class="small-label">New Testament · 5 free stories</span>
+              <h3>Miracles and Parables</h3>
+              <p>Meet Jesus in stories of wonder and hope.</p>
+            </div>
+          </div>
+          <details class="all-journeys">
+            <summary>Discover all 10 journeys</summary>
+            <ol class="journey-list">
+              <li>In the Beginning</li>
+              <li>The Dreamer’s Road</li>
+              <li>The Great Escape</li>
+              <li>Heroes and Helpers</li>
+              <li>Crowns and Courage</li>
+              <li>A Savior Is Born</li>
+              <li>Miracles and Parables</li>
+              <li>The Greatest Victory</li>
+              <li>The Church Is Born</li>
+              <li>Letters of Light</li>
+            </ol>
+            <p class="note">
+              The free sample includes the first five stories in each featured
+              journey. The Full Quest unlocks the remaining 90 stories in the
+              current library.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="cards-section" id="cards" aria-labelledby="cards-title">
+        <div class="wrap cards-layout">
+          <div class="section-copy">
+            <p class="eyebrow">Little treasures. Big stories.</p>
+            <h2 id="cards-title">A collection<br />full of wonder.</h2>
+            <p>
+              Beautiful illustrations, ornate borders and story powers. Every
+              card holds a reminder of the story you’ve just discovered.
+            </p>
+            <p>
+              Build a collection at each question level. When you try a new
+              level, your earlier cards and progress stay saved.
+            </p>
+            <div class="coming-note">
+              <span class="tag">Coming soon</span>
+              <p>
+                Real cards to hold, keep and share.<br /><span class="note"
+                  >Physical cards are on the way. Today’s collection is digital;
+                  ordering is not available yet.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card-fan">
+            <span class="fan-star" aria-hidden="true">✧</span
+            ><img
+              class="fan-back"
+              src="assets/images/card-back.jpg"
+              width="600"
+              height="840"
+              alt="The ornate blue and gold Storylight card back"
+              loading="lazy"
+            /><img
+              class="fan-creation"
+              src="assets/images/creation-card.jpg"
+              width="600"
+              height="840"
+              alt="God Creates the World trading card with its powers and decorative gold frame"
+              loading="lazy"
+            /><img
+              class="fan-storm"
+              src="assets/images/storm-card.jpg"
+              width="600"
+              height="840"
+              alt="Jesus Calms the Storm trading card, with illustrated waves and story powers"
+              loading="lazy"
+            /><span class="card-caption"
+              >Collect a little piece of the story.</span
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section wrap together-section"
+        id="together"
+        aria-labelledby="together-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">A little closer, one question at a time</p>
+          <h2 id="together-title">Everyone has a place at story time.</h2>
+          <p>
+            Little ones, big kids and grown-ups can each play at a level that
+            feels right.
+          </p>
+        </div>
+        <ul class="levels">
+          <li>
+            <span class="level-symbol" aria-hidden="true">☀</span
+            ><strong>Little Lights</strong><span class="ages">Ages 4–6</span>
+            <p>Gentle beginnings for little discoverers.</p>
+          </li>
+          <li>
+            <span class="level-symbol" aria-hidden="true">✿</span
+            ><strong>Explorers</strong><span class="ages">Ages 7–9</span>
+            <p>New discoveries for curious readers.</p>
+          </li>
+          <li>
+            <span class="level-symbol" aria-hidden="true">✧</span
+            ><strong>Torchbearers</strong><span class="ages">Ages 10–12</span>
+            <p>A little more challenge. A deeper look.</p>
+          </li>
+          <li>
+            <span class="level-symbol" aria-hidden="true">✦</span
+            ><strong>Lantern Keepers</strong
+            ><span class="ages">Teens &amp; grown-ups</span>
+            <p>Thoughtful questions to keep you learning.</p>
+          </li>
+        </ul>
+        <div class="family-panel">
+          <div class="family-copy">
+            <span class="tag">Together time</span>
+            <h3>One room.<br />Lots of little lights.</h3>
+            <p>
+              Share one screen for a family story quest, or bring 2 to 6 nearby
+              iPhones and iPads together for trivia.
+            </p>
+            <p>
+              Create a room, share its six-character code and let each player
+              choose their question level. Different Apple accounts work, too.
+            </p>
+            <p class="note">
+              Keep Wi-Fi on, allow Local Network access and stay nearby. Nearby
+              play doesn’t need an internet connection.
+            </p>
+            <a class="text-link" href="support.html#nearby-play"
+              >How nearby play works <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="tablet-frame">
+            <img
+              src="assets/images/together-ipad.jpg"
+              width="1032"
+              height="1376"
+              alt="The Together tab on iPad with Host a room, Join with a code and Share one screen options"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="section wrap grownups-section"
+        aria-labelledby="grownups-title"
+      >
+        <div>
+          <p class="eyebrow">A note for grown-ups</p>
+          <h2 id="grownups-title">Room to explore.<br />Simple to start.</h2>
+        </div>
+        <div class="grownups-copy">
+          <p>
+            Try 10 stories for free. The optional <strong>Full Quest</strong> is
+            a one-time purchase that unlocks the remaining 90 stories for every
+            local player on your device. No subscription.
+          </p>
+          <p>
+            Restore the purchase on your other devices with the same Apple
+            account. Progress stays on each device, and the purchase isn’t
+            shared with other Apple accounts.
+          </p>
+          <div class="trust-notes">
+            <span>✓ No ads</span><span>✓ No app account</span
+            ><span>✓ Purchases behind an adult check</span>
+          </div>
+          <a class="text-link" href="support.html"
+            >Visit the family help desk <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+      <section class="more-stories wrap" aria-labelledby="more-title">
+        <span class="more-spark" aria-hidden="true">✦</span>
+        <div>
+          <p class="eyebrow">The story keeps growing</p>
+          <h2 id="more-title">More wonder is on the way.</h2>
+          <p>More Bible stories and journeys are coming soon.</p>
+          <p class="note">
+            Future story packs may be offered separately from the current Full
+            Quest.
+          </p>
+        </div>
+        <span class="more-spark small-spark" aria-hidden="true">✧</span>
+      </section>
+    </main>
+    <footer class="site">
+      <div class="wrap footer-row">
+        <div>
+          <a class="footer-brand" href="./"
+            >Storylight Quest <span aria-hidden="true">✦</span></a
+          >
+          <p>A little wonder. A story to share.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="support.html">Support</a><a href="privacy.html">Privacy</a
+          ><a href="terms.html">Terms</a>
+        </nav>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 AKS Services LLC</span>
+        <p class="legal">
+          iPhone and iPad are trademarks of Apple Inc., registered in the U.S.
+          and other countries and regions.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
