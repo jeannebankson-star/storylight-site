@@ -8,6 +8,10 @@ and Terms of Use for the Storylight Quest iOS app. No build step.
 Each page is a single HTML file sharing `styles.css`. Edit, commit, push;
 GitHub Pages redeploys in about a minute.
 
+When an image shows new artwork, give it a new filename and update the
+references. GitHub Pages lets browsers reuse images for up to 10 minutes, so
+new artwork saved under an old name can keep showing the old picture.
+
 ## Design and assets
 
 The website follows the app's Sunday Storybook UI: paper `#F6FAFB`, warm
