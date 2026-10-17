@@ -13,8 +13,8 @@ Prepared from the current Storylight Quest app assets and native App Store scree
 | `images/journeys-phone.jpg` | 660 × 1434 | `AppStore/screenshots/iphone-6.9/01-journeys.png` |
 | `images/story-quest-phone.jpg` | 660 × 1434 | `AppStore/screenshots/iphone-6.9/02-story-quest.png` |
 | `images/together-ipad.jpg` | 1032 × 1376 | `AppStore/screenshots/ipad-13/05-play-together.png` |
-| `images/creation-card.jpg` | 600 × 1000 | `StorylightQuest/Resources/CardFaces/GodCreatestheWorld[face,1].png` |
-| `images/storm-card.jpg` | 600 × 1000 | `StorylightQuest/Resources/CardFaces/JesusCalmstheStorm[face,1].png` |
+| `images/creation-card-radiant.jpg` | 600 × 1000 | `StorylightQuest/Resources/CardFaces/GodCreatestheWorld[face,1].png` |
+| `images/storm-card-radiant.jpg` | 600 × 1000 | `StorylightQuest/Resources/CardFaces/JesusCalmstheStorm[face,1].png` |
 | `images/card-back-little-lights.png` | 600 × 1000 | `StorylightQuest/Resources/CardBacks/littleLights.png` |
 | `images/card-back-explorers.png` | 600 × 1000 | `StorylightQuest/Resources/CardBacks/explorers.png` |
 | `images/app-icon.png` | 180 × 180 | `StorylightQuest/Assets.xcassets/AppIcon.appiconset/AppIcon.png` |
@@ -32,3 +32,5 @@ swift assets/prepare-assets.swift /absolute/path/to/StorylightQuest
 ```
 
 The source directory must contain `AppStore/` and the nested `StorylightQuest/` app directory, from a checkout that includes the Radiant Storybook cards and `Resources/CardBacks/`. `prepare-assets.swift` uses CoreGraphics and ImageIO and writes only into this assets directory.
+
+If the source artwork changes, change the export names in `prepare-assets.swift` and the matching references in `index.html` (as with the `-radiant` card fronts) so browsers don't keep showing cached copies of the old images.
