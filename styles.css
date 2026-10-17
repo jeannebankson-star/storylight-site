@@ -786,17 +786,10 @@ details p {
 .family-copy > p.note {
   font-size: 12px;
 }
-.tablet-frame {
-  border: 8px solid var(--surface);
-  border-radius: 23px;
-  overflow: hidden;
+.family-phone {
   transform: rotate(3deg);
-  box-shadow: 0 12px 28px #2f3f4617;
-  max-width: 335px;
+  max-width: 250px;
   justify-self: end;
-}
-.tablet-frame img {
-  border-radius: 15px;
 }
 .grownups-section {
   border-top: 1px solid var(--line);
@@ -1506,10 +1499,10 @@ main.document {
   .family-copy > p.note {
     font-size: 12px;
   }
-  .tablet-frame {
-    width: 85%;
+  .family-phone {
+    width: 70%;
     justify-self: center;
-    max-width: 270px;
+    max-width: 220px;
   }
   .grownups-section {
     grid-template-columns: 1fr;
