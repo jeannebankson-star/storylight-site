@@ -39,26 +39,12 @@ func export(_ image: CGImage, name: String, width: Int, height: Int, quality: Do
     print("\(name): \(width) x \(height)")
 }
 
-func tradingCard(_ path: String) throws -> CGImage {
+// Radiant Storybook fronts and Book of Light backs are complete 900 × 1500 (3:5)
+// cards, so they are reduced whole: no crop or recomposition.
+func card(_ path: String) throws -> CGImage {
     let original = try load(path)
     precondition(original.width == 900 && original.height == 1500)
-    let output = context(900, 1260)
-    // Same geometry as CardImageCache.tradingFormat. CGImage crop rectangles
-    // use top-origin pixels; CGContext destination rectangles use bottom-origin.
-    let top = original.cropping(to: CGRect(x: 0, y: 0, width: 900, height: 676))!
-    let bottom = original.cropping(to: CGRect(x: 0, y: 916, width: 900, height: 584))!
-    output.draw(top, in: CGRect(x: 0, y: 584, width: 900, height: 676))
-    output.draw(bottom, in: CGRect(x: 0, y: 0, width: 900, height: 584))
-    output.saveGState()
-    output.move(to: CGPoint(x: 240, y: 609))
-    output.addLine(to: CGPoint(x: 660, y: 609))
-    output.addLine(to: CGPoint(x: 647, y: 584))
-    output.addLine(to: CGPoint(x: 253, y: 584))
-    output.closePath()
-    output.clip()
-    output.draw(original, in: CGRect(x: 0, y: 0, width: 900, height: 1500))
-    output.restoreGState()
-    return output.makeImage()!
+    return original
 }
 
 try fm.createDirectory(at: destination.appendingPathComponent("fonts"), withIntermediateDirectories: true)
@@ -71,7 +57,8 @@ for file in ["Montserrat-Regular.ttf", "Montserrat-SemiBold.ttf", "Montserrat-Bo
 try export(load("AppStore/screenshots/iphone-6.9/01-journeys.png"), name: "journeys-phone.jpg", width: 660, height: 1434)
 try export(load("AppStore/screenshots/iphone-6.9/02-story-quest.png"), name: "story-quest-phone.jpg", width: 660, height: 1434)
 try export(load("AppStore/screenshots/ipad-13/05-play-together.png"), name: "together-ipad.jpg", width: 1032, height: 1376)
-try export(tradingCard("StorylightQuest/Resources/CardFaces/GodCreatestheWorld[face,1].png"), name: "creation-card.jpg", width: 600, height: 840, quality: 0.92)
-try export(tradingCard("StorylightQuest/Resources/CardFaces/JesusCalmstheStorm[face,1].png"), name: "storm-card.jpg", width: 600, height: 840, quality: 0.92)
-try export(load("StorylightQuest/Assets.xcassets/CardBack.imageset/cardback.png"), name: "card-back.jpg", width: 600, height: 840, quality: 0.90)
+try export(card("StorylightQuest/Resources/CardFaces/GodCreatestheWorld[face,1].png"), name: "creation-card.jpg", width: 600, height: 1000, quality: 0.92)
+try export(card("StorylightQuest/Resources/CardFaces/JesusCalmstheStorm[face,1].png"), name: "storm-card.jpg", width: 600, height: 1000, quality: 0.92)
+try export(card("StorylightQuest/Resources/CardBacks/littleLights.png"), name: "card-back-little-lights.png", width: 600, height: 1000)
+try export(card("StorylightQuest/Resources/CardBacks/explorers.png"), name: "card-back-explorers.png", width: 600, height: 1000)
 try export(load("StorylightQuest/Assets.xcassets/AppIcon.appiconset/AppIcon.png"), name: "app-icon.png", width: 180, height: 180)

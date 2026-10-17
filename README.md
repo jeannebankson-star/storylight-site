@@ -15,8 +15,8 @@ surfaces `#FFFEFA`, teal `#246B63`, mint `#DFF1EA`, peach `#FFF0E1` and small
 sunflower, coral and lilac accents. Montserrat is served locally with its
 SIL Open Font License. There are no JavaScript dependencies or analytics.
 
-The landing page uses actual app screenshots and the original ornate cards.
-Card faces and backs retain the app's 5:7 format. See
+The landing page uses actual app screenshots and the app's Radiant Storybook
+cards with Book of Light backs, at their full 3:5 card shape. See
 [assets/README.md](assets/README.md) for source paths and regeneration.
 
 Preview locally with `python3 -m http.server 8874 --bind 127.0.0.1`.
