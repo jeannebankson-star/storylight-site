@@ -18,6 +18,7 @@ Prepared from the current Storylight Quest app assets and native App Store scree
 | `images/card-back-little-lights.png` | 600 × 1000 | `StorylightQuest/Resources/CardBacks/littleLights.png` |
 | `images/card-back-explorers.png` | 600 × 1000 | `StorylightQuest/Resources/CardBacks/explorers.png` |
 | `images/app-icon.png` | 180 × 180 | `StorylightQuest/Assets.xcassets/AppIcon.appiconset/AppIcon.png` |
+| `images/download-on-the-app-store.svg` | vector, shown 44 px tall | Apple's black "Download on the App Store" badge, US English, from Apple Marketing Tools, unaltered; not made by `prepare-assets.swift` |
 
 Screenshots are proportionally reduced to half their native width and height, with no crop, compositing, interface changes, or overlays. All exports use sRGB.
 
