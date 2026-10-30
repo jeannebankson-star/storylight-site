@@ -319,6 +319,21 @@ li {
   color: var(--teal);
   font-weight: 800;
 }
+/* Apple's badge stays unaltered, at least 40px tall, with clear space of a
+   quarter of its height on every side. */
+.app-store-badge {
+  display: block;
+  width: fit-content;
+  margin-top: 28px;
+  border-radius: 9px;
+}
+.app-store-badge img {
+  width: auto;
+  height: 44px;
+}
+.app-store-badge + .hero-note {
+  margin-top: 14px;
+}
 .hero-scene {
   height: 600px;
   position: relative;
@@ -1305,6 +1320,9 @@ main.document {
     gap: 7px;
     margin-top: 23px;
     margin-bottom: 16px;
+  }
+  .app-store-badge {
+    margin-top: 23px;
   }
   .hero-scene {
     width: min(370px, 100%);
